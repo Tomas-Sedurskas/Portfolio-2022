@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &_list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+  }
+}
