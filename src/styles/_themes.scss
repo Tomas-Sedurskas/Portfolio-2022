@@ -1,0 +1,11 @@
+@use "colors" as *;
+
+.app[data-theme="light"] {
+  background-color: $light;
+  color: $dark;
+}
+
+.app[data-theme="dark"] {
+  background-color: $dark;
+  color: $light;
+}
