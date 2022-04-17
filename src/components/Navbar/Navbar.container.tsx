@@ -1,14 +1,17 @@
-import React, { VFC } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+
+import logo from "assets/Circle.svg";
 
 import "./Navbar.scss";
 
-const Navbar: VFC = () => {
+const Navbar = () => {
   const className = "navbar";
 
   return (
     <nav className={className}>
       <div className={`${className}_logo`}>
+        <img src={logo} />
         <span>Tomas Sedurskas</span>
       </div>
       <ul className={`${className}_list`}>
