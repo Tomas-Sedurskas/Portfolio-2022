@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: $spacing-3xl;
+  gap: $spacing-xl;
 
   &_hero {
     display: flex;
@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    gap: $spacing-xl;
   }
 
   &_hero-title {
