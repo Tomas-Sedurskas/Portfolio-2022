@@ -1,7 +1,14 @@
+@use "src/styles/spacing" as *;
+@use "src/styles/breakpoints" as *;
+
 .locked-layout {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: 100%;
   height: 100%;
+  max-width: $breakpoint-xl;
+  padding: $spacing-lg;
+  box-sizing: border-box;
 }
