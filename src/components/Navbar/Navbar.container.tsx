@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "assets/Circle.svg";
 
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   const className = "navbar";
 
   return (

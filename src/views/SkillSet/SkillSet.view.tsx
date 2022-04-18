@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const SkillSetView = () => {
+const SkillSetView: FC = () => {
   return (
     <div>
       <h1>Skill set page</h1>

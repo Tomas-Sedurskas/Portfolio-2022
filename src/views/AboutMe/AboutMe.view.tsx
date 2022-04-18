@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const AboutMeView = () => {
+const AboutMeView: FC = () => {
   return (
     <div>
       <h1>About me page</h1>

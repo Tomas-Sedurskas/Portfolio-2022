@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { LockedLayout } from "layouts/LockedLayout";
 import { Home } from "containers/Home";
 
-const HomeView = () => {
+const HomeView: FC = () => {
   return (
     <LockedLayout>
       <Home />
