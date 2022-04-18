@@ -1,6 +1,6 @@
 import React from "react";
 
-const Education = () => {
+const EducationView = () => {
   return (
     <div>
       <h1>Education page</h1>
@@ -8,4 +8,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default EducationView;

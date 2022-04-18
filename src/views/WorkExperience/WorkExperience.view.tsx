@@ -1,6 +1,6 @@
 import React from "react";
 
-const WorkExperience = () => {
+const WorkExperienceView = () => {
   return (
     <div>
       <h1>Work experience page</h1>
@@ -8,4 +8,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience;
+export default WorkExperienceView;

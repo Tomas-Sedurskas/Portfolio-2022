@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Error404 } from "views";
-import { Layout } from "containers/Layout";
-import { WorkExperience } from "views/WorkExperience";
-import { Education } from "views/Education";
-import { SkillSet } from "views/SkillSet";
-import { AboutMe } from "views/AboutMe";
+
+import { WorkExperienceView } from "views/WorkExperience";
+import { BaseLayout } from "layouts/BaseLayout";
+import { EducationView } from "views/Education";
+import { SkillSetView } from "views/SkillSet";
+import { AboutMeView } from "views/AboutMe";
+import { HomeView, Error404View } from "views";
+
 import "styles/index.scss";
 
 function App() {
@@ -13,13 +15,13 @@ function App() {
     <div className="app" data-theme="dark">
       <Router>
         <Routes>
-          <Route element={<Layout />} path="/">
-            <Route index element={<Home />} />
-            <Route element={<WorkExperience />} path="/work-experience" />
-            <Route element={<Education />} path="/education" />
-            <Route element={<SkillSet />} path="/skill-set" />
-            <Route element={<AboutMe />} path="/about-me" />
-            <Route element={<Error404 />} path="*" />
+          <Route element={<BaseLayout />} path="/">
+            <Route index element={<HomeView />} />
+            <Route element={<WorkExperienceView />} path="/work-experience" />
+            <Route element={<EducationView />} path="/education" />
+            <Route element={<SkillSetView />} path="/skill-set" />
+            <Route element={<AboutMeView />} path="/about-me" />
+            <Route element={<Error404View />} path="*" />
           </Route>
         </Routes>
       </Router>

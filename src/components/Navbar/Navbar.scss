@@ -9,28 +9,25 @@
   width: 100%;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: $lg-space;
+  padding: $spacing-lg;
 
   &_logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: $sm-space;
+    gap: $spacing-sm;
     font-size: 18px;
     font-weight: 700;
   }
 
   &_list {
     display: flex;
-    gap: $lg-space;
+    gap: $spacing-lg;
     list-style: none;
     margin: 0;
   }
 
   &_list-item a {
-    text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
-    color: inherit;
   }
 }

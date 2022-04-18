@@ -1,1 +1,1 @@
-export { default as AboutMe } from "./AboutMe.view";
+export { default as AboutMeView } from "./AboutMe.view";
