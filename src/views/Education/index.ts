@@ -1,1 +1,1 @@
-export { default as Education } from "./Education.view";
+export { default as EducationView } from "./Education.view";

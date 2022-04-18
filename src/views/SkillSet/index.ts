@@ -1,1 +1,1 @@
-export { default as SkillSet } from "./SkillSet.view";
+export { default as SkillSetView } from "./SkillSet.view";

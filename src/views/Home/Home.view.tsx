@@ -1,11 +1,14 @@
-import React, { VFC } from "react";
+import React from "react";
 
-const Home = () => {
+import { LockedLayout } from "layouts/LockedLayout";
+import { Home } from "containers/Home";
+
+const HomeView = () => {
   return (
-    <div>
-      <h1>Home page</h1>
-    </div>
+    <LockedLayout>
+      <Home />
+    </LockedLayout>
   );
 };
 
-export default Home;
+export default HomeView;

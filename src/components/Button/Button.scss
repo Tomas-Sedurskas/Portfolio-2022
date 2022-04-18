@@ -1,0 +1,20 @@
+@use "src/styles/fonts" as *;
+@use "src/styles/spacing" as *;
+@use "src/styles/colors" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: $font-sm;
+  gap: $spacing-md;
+  cursor: pointer;
+  padding: $spacing-sm 0;
+  border-radius: 4px;
+  transition: gap 0.45s cubic-bezier(0.3, 1.6, 0.6, 1.4);
+
+  &:hover {
+    gap: $spacing-lg;
+    text-decoration: underline;
+  }
+}

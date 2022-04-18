@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillSet = () => {
+const SkillSetView = () => {
   return (
     <div>
       <h1>Skill set page</h1>
@@ -8,4 +8,4 @@ const SkillSet = () => {
   );
 };
 
-export default SkillSet;
+export default SkillSetView;
