@@ -1,17 +1,20 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "assets/Circle.svg";
+import { Colors } from "types/colors.types";
+import { IconShapes } from "types/icons";
+import { Icon } from "components/Icon";
 
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   const className = "navbar";
 
   return (
     <nav className={className}>
       <div className={`${className}_logo`}>
-        <img src={logo} />
+        <Icon name={IconShapes.Circle} size="sm" color={Colors.Yellow} />
+
         <span>Tomas Sedurskas</span>
       </div>
       <ul className={`${className}_list`}>
@@ -26,9 +29,6 @@ const Navbar = () => {
         </li>
         <li className={`${className}_list-item`}>
           <Link to="/skill-set">Skill set</Link>
-        </li>
-        <li className={`${className}_list-item`}>
-          <Link to="/about-me">About me</Link>
         </li>
       </ul>
     </nav>

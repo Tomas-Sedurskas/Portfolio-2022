@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { Outlet } from "react-router-dom";
 
 import { Navbar } from "components/Navbar";
 
 import "./BaseLayout.scss";
 
-const BaseLayout = () => {
+const BaseLayout: FC = () => {
   const className = "layout";
 
   return (

@@ -5,14 +5,13 @@ import { WorkExperienceView } from "views/WorkExperience";
 import { BaseLayout } from "layouts/BaseLayout";
 import { EducationView } from "views/Education";
 import { SkillSetView } from "views/SkillSet";
-import { AboutMeView } from "views/AboutMe";
 import { HomeView, Error404View } from "views";
 
 import "styles/index.scss";
 
 function App() {
   return (
-    <div className="app" data-theme="dark">
+    <div className="app" data-theme="light">
       <Router>
         <Routes>
           <Route element={<BaseLayout />} path="/">
@@ -20,7 +19,6 @@ function App() {
             <Route element={<WorkExperienceView />} path="/work-experience" />
             <Route element={<EducationView />} path="/education" />
             <Route element={<SkillSetView />} path="/skill-set" />
-            <Route element={<AboutMeView />} path="/about-me" />
             <Route element={<Error404View />} path="*" />
           </Route>
         </Routes>

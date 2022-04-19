@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 
 import "./Home.scss";
-import colorShape from "assets/colorShape.svg";
+import colorShape from "assets/images/colorShape.svg";
 import { Button } from "components/Button";
 
-const Home = () => {
+const Home: FC = () => {
   const className = "home";
 
   return (
