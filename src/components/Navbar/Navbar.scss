@@ -1,5 +1,6 @@
 @use "src/styles/spacing" as *;
 @use "src/styles/colors" as *;
+@use "src/styles/fonts" as *;
 
 .navbar {
   display: flex;
@@ -10,24 +11,24 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: $spacing-lg;
+  font-size: $font-md;
+  font-weight: 700;
+  line-height: $font-md;
+  background-color: inherit;
+  z-index: 100;
 
   &_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: $spacing-sm;
-    font-size: 18px;
-    font-weight: 700;
   }
 
   &_list {
     display: flex;
     gap: $spacing-lg;
+    align-items: center;
     list-style: none;
     margin: 0;
-  }
-
-  &_list-item a {
-    font-weight: bold;
   }
 }

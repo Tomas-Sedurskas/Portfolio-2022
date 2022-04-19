@@ -1,5 +1,11 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
-export const ContentLayout: FC = () => {
-  return <div>ContentLayout</div>;
+import "./ContentLayout.scss";
+
+const ContentLayout: FC<{ children: ReactNode }> = ({ children }) => {
+  const className = "content-layout";
+
+  return <div className={className}>{children}</div>;
 };
+
+export default ContentLayout;
