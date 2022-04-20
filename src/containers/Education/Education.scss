@@ -1,6 +1,7 @@
 @use "src/styles/spacing" as *;
 @use "src/styles/fonts" as *;
 @use "src/styles/colors" as *;
+@use "src/styles/borders" as *;
 
 .education {
   display: flex;
@@ -60,7 +61,7 @@
 
   &_image {
     border: 16px solid #000;
-    border-radius: 32px;
+    border-radius: $border-radius-xl;
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 

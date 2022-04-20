@@ -1,6 +1,7 @@
 @use "src/styles/spacing" as *;
 @use "src/styles/fonts" as *;
 @use "src/styles/colors" as *;
+@use "src/styles/borders" as *;
 
 .content-section {
   display: flex;
@@ -13,7 +14,7 @@
   &_title {
     font-size: $font-3xl;
     display: flex;
-    gap: $spacing-md;
+    padding-bottom: $spacing-sm;
     align-items: center;
   }
 
@@ -25,16 +26,73 @@
   }
 
   &_paragraph {
-    font-size: $font-lg;
+    font-size: $font-md;
     font-weight: 400;
-    padding: $spacing-lg 0;
+  }
+
+  &_technologies {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &_technologies-list {
+    display: flex;
+    gap: $spacing-md;
+  }
+
+  &_technologies-icon {
+    position: relative;
+
+    img {
+      width: 56px;
+      height: 56px;
+      transition: transform 0.3s ease;
+      border-radius: $border-radius-sm;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    span {
+      display: block;
+      opacity: 0;
+      font-size: $font-xs;
+      border-radius: $border-radius-sm;
+      background-color: $grey;
+      padding: $spacing-xs $spacing-sm;
+      bottom: -$spacing-md;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      position: absolute;
+      transition: opacity 0.4s ease;
+    }
+
+    &:hover {
+      span {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+
+  &_experience {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &_experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
   }
 
   &_column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: $spacing-sm;
+    gap: $spacing-xl;
     width: 100%;
 
     &:first-child {
@@ -49,7 +107,7 @@
 
   &_image {
     border: 16px solid #000;
-    border-radius: 32px;
+    border-radius: $border-radius-xl;
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
