@@ -1,6 +1,7 @@
 @use "src/styles/spacing" as *;
 @use "src/styles/fonts" as *;
 @use "src/styles/colors" as *;
+@use "src/styles/borders" as *;
 
 .content-section {
   display: flex;
@@ -58,7 +59,7 @@
       display: block;
       opacity: 0;
       font-size: $font-xs;
-      border-radius: 4px;
+      border-radius: $border-radius-sm;
       background-color: $grey;
       padding: $spacing-xs $spacing-sm;
       bottom: -$spacing-md;
@@ -94,7 +95,7 @@
 
   &_image {
     border: 16px solid #000;
-    border-radius: 32px;
+    border-radius: $border-radius-xl;
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
