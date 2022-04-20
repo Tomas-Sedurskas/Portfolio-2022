@@ -1,10 +1,12 @@
+import Education from "containers/Education/Education.container";
+import { ContentLayout } from "layouts/ContentLayout";
 import React, { FC } from "react";
 
 const EducationView: FC = () => {
   return (
-    <div>
-      <h1>Education page</h1>
-    </div>
+    <ContentLayout>
+      <Education />
+    </ContentLayout>
   );
 };
 

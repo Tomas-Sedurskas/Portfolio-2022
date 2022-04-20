@@ -17,4 +17,8 @@
     gap: $spacing-lg;
     text-decoration: underline;
   }
+
+  &_reverse {
+    transform: rotate(180deg);
+  }
 }

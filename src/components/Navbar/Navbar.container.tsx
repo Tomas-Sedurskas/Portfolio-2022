@@ -25,7 +25,7 @@ const Navbar: FC = () => {
           <Link to="/work-experience">Work experience</Link>
         </li>
         <li className={`${className}_list-item`}>
-          <Link to="/education">Education</Link>
+          <Link to="/education/0">Education</Link>
         </li>
         <li className={`${className}_list-item`}>
           <Link to="/skill-set">Skill set</Link>
