@@ -4,14 +4,15 @@ import { ButtonProps } from "./Button.types";
 import Arrow from "assets/icons/Arrow.svg";
 
 import "./Button.scss";
-const Button: FC<ButtonProps> = ({ label, url }) => {
+const Button: FC<ButtonProps> = ({ label, url, reverse }) => {
   const className = "button";
 
   return (
     <Link to={url}>
       <button className={className}>
+        {reverse && <img className={`${className}_reverse`} src={Arrow} />}
         {label}
-        <img src={Arrow} />
+        {!reverse && <img src={Arrow} />}
       </button>
     </Link>
   );
