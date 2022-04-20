@@ -7,6 +7,7 @@ export interface ContentSection {
   description: string;
   technologies: string[];
   experiences: string[];
+  url: string;
   img: string;
   shape: IconShapes;
   color: Colors;

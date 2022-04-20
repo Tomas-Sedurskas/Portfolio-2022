@@ -39,11 +39,16 @@ const Education: FC<EducationProps> = ({
       })}
       <div className={`${className}_footer`}>
         <Button
+          linkType="internal"
           label="Previous project"
           url={`/education/${calcPreviousId(id)}`}
           reverse={true}
         />
-        <Button label="Next project" url={`/education/${calcNextId(id)}`} />
+        <Button
+          linkType="internal"
+          label="Next project"
+          url={`/education/${calcNextId(id)}`}
+        />
       </div>
     </div>
   );
