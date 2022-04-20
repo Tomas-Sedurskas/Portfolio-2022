@@ -13,8 +13,8 @@ const ContentSection: FC<ContentSectionProps> = ({
   title,
   subtitle,
   description,
+  technologies,
   img,
-  url,
   shape,
   color,
 }) => {
@@ -31,7 +31,22 @@ const ContentSection: FC<ContentSectionProps> = ({
           <h3 className={`${className}_subtitle`}>{subtitle}</h3>
         </div>
         <p className={`${className}_paragraph`}>{description}</p>
-        <Button label="View my work" url={url} />
+        <div className={`${className}_technologies`}>
+          <h3>Used technologies:</h3>
+          <div className={`${className}_technologies-list`}>
+            {technologies.map((technology) => {
+              return (
+                <div className={`${className}_technologies-icon`}>
+                  <span>{technology}</span>
+                  <img
+                    src={`src/assets/logos/${technology}.png`}
+                    alt={`${technology} logo`}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
       <div className={`${className}_column`}>
         <div className={`${className}_image`}>

@@ -5,8 +5,8 @@ export interface ContentSection {
   title: string;
   subtitle: string;
   description: string;
+  technologies: string[];
   img: string;
-  url: string;
   shape: IconShapes;
   color: Colors;
 }
