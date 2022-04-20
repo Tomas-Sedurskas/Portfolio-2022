@@ -25,6 +25,7 @@ export const WORK_EXPERIENCE_CONTENT: ContentSection[] = [
       "Used React Query, React Table and React Hook Form to speed up feature development.",
       "Worked with a feature-based Git flow.",
     ],
+    url: "https://www.kevin.eu/",
     img: "src/assets/images/kevin-screen.png",
     shape: IconShapes.Hexagon,
     color: Colors.Red,
@@ -38,6 +39,7 @@ export const WORK_EXPERIENCE_CONTENT: ContentSection[] = [
     experiences: [
       "Worked on coding new front-end views with SAPUI5 from design prototypes and connecting the UI with the back-end and API.",
     ],
+    url: "https://www.addendumgroup.com/",
     img: "src/assets/images/addendum-screen.png",
     shape: IconShapes.Pentagon,
     color: Colors.Green,
@@ -54,6 +56,7 @@ export const WORK_EXPERIENCE_CONTENT: ContentSection[] = [
       "Transferred and updated parts of the web application from AngularJS to a modern version of React.",
       "Worked with outsourced third-party UI design projects from other clients.",
     ],
+    url: "https://www.smart-trial.com/",
     img: "src/assets/images/smart-trial-screen.png",
     shape: IconShapes.Square,
     color: Colors.Yellow,
@@ -68,7 +71,7 @@ export const WORK_EXPERIENCE_CONTENT: ContentSection[] = [
       "Worked on creating a demo web application with their Internet of Things API tool and React.",
       "The web application allowed to trigger custom lighting presets based on the user’s Google Calendar events in addition to having full custom UI for remote control for any smart light bulb.",
     ],
-
+    url: "https://www.seluxit.com/",
     img: "src/assets/images/seluxit-screen.png",
     shape: IconShapes.Triangle,
     color: Colors.Blue,

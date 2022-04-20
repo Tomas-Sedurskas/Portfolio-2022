@@ -6,8 +6,6 @@ import { Button } from "components/Button";
 import { Icon } from "components/Icon";
 
 import "./ContentSection.scss";
-import { IconShapes } from "types/icons";
-import { Colors } from "types/colors.types";
 
 const ContentSection: FC<ContentSectionProps> = ({
   title,
@@ -15,6 +13,7 @@ const ContentSection: FC<ContentSectionProps> = ({
   description,
   technologies,
   experiences,
+  url,
   img,
   shape,
   color,
@@ -56,6 +55,7 @@ const ContentSection: FC<ContentSectionProps> = ({
             })}
           </ul>
         </div>
+        <Button label={`Visit ${title}`} url={url} linkType="external" />
       </div>
       <div className={`${className}_column`}>
         <div className={`${className}_image`}>

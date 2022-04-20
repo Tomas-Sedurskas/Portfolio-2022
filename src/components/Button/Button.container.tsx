@@ -4,17 +4,29 @@ import { ButtonProps } from "./Button.types";
 import Arrow from "assets/icons/Arrow.svg";
 
 import "./Button.scss";
-const Button: FC<ButtonProps> = ({ label, url, reverse }) => {
+const Button: FC<ButtonProps> = ({ label, url, reverse, linkType }) => {
   const className = "button";
 
   return (
-    <Link to={url}>
-      <button className={className}>
-        {reverse && <img className={`${className}_reverse`} src={Arrow} />}
-        {label}
-        {!reverse && <img src={Arrow} />}
-      </button>
-    </Link>
+    <>
+      {linkType === "internal" && (
+        <Link to={url}>
+          <button className={className}>
+            {reverse && <img className={`${className}_reverse`} src={Arrow} />}
+            {label}
+            {!reverse && <img src={Arrow} />}
+          </button>
+        </Link>
+      )}
+
+      {linkType === "external" && (
+        <a target="_blank" className={className} href={url}>
+          {reverse && <img className={`${className}_reverse`} src={Arrow} />}
+          {label}
+          {!reverse && <img src={Arrow} />}
+        </a>
+      )}
+    </>
   );
 };
 export default Button;

@@ -16,7 +16,11 @@ const Home: FC = () => {
           <span>React Frontend developer</span>
         </h1>
 
-        <Button label={"View my work"} url={"/work-experience"} />
+        <Button
+          linkType="internal"
+          label={"View my work"}
+          url={"/work-experience"}
+        />
       </div>
 
       <img className={`${className}_hero-image`} src={colorShape} />
