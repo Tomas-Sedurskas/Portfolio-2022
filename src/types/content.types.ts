@@ -6,6 +6,7 @@ export interface ContentSection {
   subtitle: string;
   description: string;
   technologies: string[];
+  experiences: string[];
   img: string;
   shape: IconShapes;
   color: Colors;

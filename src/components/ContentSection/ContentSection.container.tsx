@@ -14,6 +14,7 @@ const ContentSection: FC<ContentSectionProps> = ({
   subtitle,
   description,
   technologies,
+  experiences,
   img,
   shape,
   color,
@@ -32,7 +33,7 @@ const ContentSection: FC<ContentSectionProps> = ({
         </div>
         <p className={`${className}_paragraph`}>{description}</p>
         <div className={`${className}_technologies`}>
-          <h3>Used technologies:</h3>
+          <h3 className={`${className}_subtitle`}>Used technologies:</h3>
           <div className={`${className}_technologies-list`}>
             {technologies.map((technology) => {
               return (
@@ -46,6 +47,14 @@ const ContentSection: FC<ContentSectionProps> = ({
               );
             })}
           </div>
+        </div>
+        <div className={`${className}_experience`}>
+          <h3 className={`${className}_subtitle`}>More details:</h3>
+          <ul className={`${className}_experience-list`}>
+            {experiences.map((experience) => {
+              return <li>{experience}</li>;
+            })}
+          </ul>
         </div>
       </div>
       <div className={`${className}_column`}>
