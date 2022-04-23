@@ -12,7 +12,13 @@ const Button: FC<ButtonProps> = ({ label, url, reverse, linkType }) => {
       {linkType === "internal" && (
         <Link to={url}>
           <button className={className}>
-            {reverse && <img className={`${className}_reverse`} src={Arrow} />}
+            {reverse && (
+              <img
+                className={`${className}_reverse`}
+                src={Arrow}
+                loading="lazy"
+              />
+            )}
             {label}
             {!reverse && <img src={Arrow} />}
           </button>
@@ -21,9 +27,15 @@ const Button: FC<ButtonProps> = ({ label, url, reverse, linkType }) => {
 
       {linkType === "external" && (
         <a target="_blank" className={className} href={url}>
-          {reverse && <img className={`${className}_reverse`} src={Arrow} />}
+          {reverse && (
+            <img
+              className={`${className}_reverse`}
+              src={Arrow}
+              loading="lazy"
+            />
+          )}
           {label}
-          {!reverse && <img src={Arrow} />}
+          {!reverse && <img src={Arrow} loading="lazy" />}
         </a>
       )}
     </>

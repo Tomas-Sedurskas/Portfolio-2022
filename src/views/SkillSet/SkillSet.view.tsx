@@ -1,10 +1,13 @@
 import React, { FC } from "react";
 
+import { LockedLayout } from "layouts/LockedLayout";
+import { SkillSet } from "containers/SkillSet";
+
 const SkillSetView: FC = () => {
   return (
-    <div>
-      <h1>Skill set page</h1>
-    </div>
+    <LockedLayout>
+      <SkillSet />
+    </LockedLayout>
   );
 };
 

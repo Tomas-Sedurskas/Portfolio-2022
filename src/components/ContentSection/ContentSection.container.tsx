@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 import { ContentSection as ContentSectionProps } from "types/content.types";
 
+import { LogoIconList } from "components/LogoIconList";
 import { Button } from "components/Button";
 import { Icon } from "components/Icon";
 
@@ -33,19 +34,7 @@ const ContentSection: FC<ContentSectionProps> = ({
         <p className={`${className}_paragraph`}>{description}</p>
         <div className={`${className}_technologies`}>
           <h3 className={`${className}_subtitle`}>Used technologies:</h3>
-          <div className={`${className}_technologies-list`}>
-            {technologies.map((technology) => {
-              return (
-                <div className={`${className}_technologies-icon`}>
-                  <span>{technology}</span>
-                  <img
-                    src={`src/assets/logos/${technology}.png`}
-                    alt={`${technology} logo`}
-                  />
-                </div>
-              );
-            })}
-          </div>
+          <LogoIconList icons={technologies} enableToolips={true} />
         </div>
         <div className={`${className}_experience`}>
           <h3 className={`${className}_subtitle`}>More details:</h3>
@@ -59,7 +48,7 @@ const ContentSection: FC<ContentSectionProps> = ({
       </div>
       <div className={`${className}_column`}>
         <div className={`${className}_image`}>
-          <img src={img} />
+          <img src={img} loading="lazy" />
         </div>
       </div>
     </div>
