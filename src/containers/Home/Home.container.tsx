@@ -23,7 +23,11 @@ const Home: FC = () => {
         />
       </div>
 
-      <img className={`${className}_hero-image`} src={colorShape} />
+      <img
+        className={`${className}_hero-image`}
+        src={colorShape}
+        loading="lazy"
+      />
     </div>
   );
 };
