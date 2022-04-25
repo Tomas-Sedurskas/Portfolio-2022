@@ -48,7 +48,7 @@ const ContentSection: FC<ContentSectionProps> = ({
       </div>
       <div className={`${className}_column`}>
         <div className={`${className}_image`}>
-          <img src={img} loading="lazy" />
+          <img src={img} />
         </div>
       </div>
     </div>

@@ -1,11 +1,23 @@
 @use "colors" as *;
 
+.app {
+  transition: all 0.45s ease;
+}
+
 .app[data-theme="light"] {
   background-color: $light;
   color: $dark;
+
+  a {
+    color: $dark;
+  }
 }
 
 .app[data-theme="dark"] {
   background-color: $dark;
   color: $light;
+
+  a {
+    color: $light;
+  }
 }

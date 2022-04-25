@@ -1,0 +1,53 @@
+@use "src/styles/fonts" as *;
+
+.hero-svg {
+  position: relative;
+
+  svg {
+    width: 480px;
+    height: 480px;
+  }
+
+  path {
+    transition: all 0.3s ease;
+  }
+
+  &_path {
+    cursor: pointer;
+    filter: brightness(1);
+  }
+
+  &_path:hover {
+    filter: brightness(0.9);
+  }
+
+  &_path-activated {
+    cursor: default;
+  }
+
+  &_secret {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.65;
+    font-size: $font-lg;
+    width: 100%;
+    animation-name: secret;
+    animation-duration: 1.6s;
+    font-weight: 700;
+  }
+
+  @keyframes secret {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

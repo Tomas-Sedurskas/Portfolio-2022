@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Colors } from "types/colors.types";
@@ -6,17 +6,32 @@ import { IconShapes } from "types/icons";
 import { Icon } from "components/Icon";
 
 import "./Navbar.scss";
+import ThemeContext from "context/ThemeContext";
 
 const Navbar: FC = () => {
   const className = "navbar";
 
+  const { isThemeDark, toggleTheme, isSecretEnabled } =
+    useContext(ThemeContext);
+
   return (
     <nav className={className}>
-      <div className={`${className}_logo`}>
-        <Icon name={IconShapes.Circle} size="sm" color={Colors.Yellow} />
+      {isSecretEnabled ? (
+        <div className={`${className}_logo`} onClick={toggleTheme}>
+          {isThemeDark ? (
+            <Icon name={IconShapes.Moon} size="sm" color={Colors.White} />
+          ) : (
+            <Icon name={IconShapes.Circle} size="sm" color={Colors.Yellow} />
+          )}
+          <span>Tomas Sedurskas</span>
+        </div>
+      ) : (
+        <div className={`${className}_logo -inactive`}>
+          <Icon name={IconShapes.Circle} size="sm" color={Colors.Yellow} />
+          <span>Tomas Sedurskas</span>
+        </div>
+      )}
 
-        <span>Tomas Sedurskas</span>
-      </div>
       <ul className={`${className}_list`}>
         <li className={`${className}_list-item`}>
           <Link to="/">Home</Link>
