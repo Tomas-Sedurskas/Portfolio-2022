@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import { ButtonProps } from "./Button.types";
-import Arrow from "assets/icons/Arrow.svg";
+import Arrow from "/assets/icons/Arrow.svg";
 
 import "./Button.scss";
 const Button: FC<ButtonProps> = ({ label, url, reverse, linkType }) => {

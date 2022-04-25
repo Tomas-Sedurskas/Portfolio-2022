@@ -34,16 +34,16 @@ const Navbar: FC = () => {
 
       <ul className={`${className}_list`}>
         <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/work-experience">Work experience</Link>
+          <Link to="/work-experience">Work experience</Link>
         </li>
         <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/education/0">Education</Link>
+          <Link to="/education/0">Education</Link>
         </li>
         <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/skill-set">Skill set</Link>
+          <Link to="/skill-set">Skill set</Link>
         </li>
       </ul>
     </nav>
