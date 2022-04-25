@@ -1,6 +1,8 @@
 @use "src/styles/fonts" as *;
+@use "src/styles/breakpoints" as *;
 
 .hero-svg {
+  display: flex;
   position: relative;
 
   svg {
@@ -49,5 +51,22 @@
     100% {
       opacity: 1;
     }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .hero-svg {
+    align-items: center;
+
+    svg {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .hero-svg {
+    align-items: center;
+    justify-content: center;
   }
 }

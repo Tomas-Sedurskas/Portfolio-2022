@@ -23,7 +23,12 @@ const Button: FC = () => {
 
   return (
     <div className={className}>
-      <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        viewBox="0 0 480 480"
+        preserveAspectRatio="xMinYMin meet"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           className={
             isRedClicked ? `${className}_path-activated` : `${className}_path`
@@ -66,7 +71,8 @@ const Button: FC = () => {
         <p className={`${className}_secret`}>
           Congratulations!<br></br>
           You unlocked dark mode. <br></br>
-          Click the orange dot in the top left.
+          Click the orange circle <br></br>
+          at the top of the page
         </p>
       )}
     </div>

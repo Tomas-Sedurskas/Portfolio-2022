@@ -13,3 +13,11 @@
   padding: $spacing-lg;
   box-sizing: border-box;
 }
+
+@media (max-width: $breakpoint-md) {
+  .locked-layout {
+    min-height: calc(100vh - $font-md - 2 * $spacing-md);
+    height: auto;
+    padding-bottom: $spacing-2xl;
+  }
+}
