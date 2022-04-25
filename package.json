@@ -1,11 +1,8 @@
 {
-  "homepage": "https://tomas-sedurskas.github.io/Portfolio-2022",
   "name": "portfolio-2022",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
