@@ -1,0 +1,90 @@
+@use "src/styles/spacing" as *;
+@use "src/styles/fonts" as *;
+@use "src/styles/colors" as *;
+@use "src/styles/borders" as *;
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacing-2xl 0;
+  border-bottom: 1px solid $grey;
+  gap: $spacing-2xl;
+
+  &_title {
+    font-size: $font-4xl;
+    display: flex;
+    gap: $spacing-md;
+    align-items: center;
+  }
+
+  &_subtitle {
+    font-size: $font-sm;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $grey;
+  }
+
+  &_paragraph {
+    margin: 0;
+    font-size: $font-lg;
+    font-weight: 400;
+    padding-top: $spacing-xl;
+  }
+
+  &_wrapper {
+    flex-direction: column;
+    display: flex;
+    gap: $spacing-2xl;
+    width: 100%;
+
+    img {
+      border-radius: $border-radius-md;
+      transition: all 0.55s ease;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        transform: scale(1.15);
+        box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  &_row {
+    display: flex;
+    width: 100%;
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $spacing-sm;
+    width: 100%;
+    max-width: 80ch;
+  }
+
+  &_secondary-title {
+    font-size: $font-2xl;
+    font-weight: 700;
+  }
+
+  &_image {
+    border: 16px solid #000;
+    border-radius: $border-radius-xl;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+    img {
+      max-width: 840px;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

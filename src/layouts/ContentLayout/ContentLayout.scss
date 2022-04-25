@@ -1,0 +1,11 @@
+@use "src/styles/breakpoints" as *;
+@use "src/styles/spacing" as *;
+
+.content-layout {
+  display: flex;
+  width: 100%;
+  max-width: $breakpoint-xl;
+  padding: 0 $spacing-lg;
+  box-sizing: border-box;
+  align-self: center;
+}

@@ -1,0 +1,129 @@
+@use "src/styles/breakpoints" as *;
+@use "src/styles/colors" as *;
+@use "src/styles/spacing" as *;
+@use "src/styles/fonts" as *;
+
+.navbar-mobile {
+  position: relative;
+  background-color: inherit;
+  display: flex;
+  position: sticky;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+
+  &_logo {
+    display: flex;
+
+    gap: $spacing-sm;
+    line-height: $font-md;
+    font-size: $font-md;
+    font-weight: 700;
+    padding: $spacing-lg;
+    box-sizing: border-box;
+    background-color: inherit;
+    white-space: nowrap;
+  }
+
+  &_burger {
+    display: block;
+    position: absolute;
+    height: auto;
+    margin: $spacing-lg;
+    width: 52px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 20;
+
+    &-position {
+      width: 100%;
+      height: 50%;
+    }
+
+    &:hover {
+      .navbar-mobile_burger-top {
+        margin-left: 0px;
+      }
+
+      .navbar-mobile_burger-bot {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &_burger-top {
+    display: block;
+    width: 36px;
+    height: 4px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    background-color: $grey;
+    transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &.-active {
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-bottom: -4px !important;
+      transform: rotate(45deg);
+    }
+  }
+
+  &_burger-bot {
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: $grey;
+    transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &.-active {
+      margin: 0 !important;
+      padding: 0 !important;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &_list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: inherit;
+    z-index: 10;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 3;
+    font-size: $font-xl;
+    font-weight: 700;
+    padding: $spacing-3xl $spacing-lg;
+    width: 30ch;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    animation-name: expandNav;
+    animation-duration: 0.4s;
+  }
+
+  &_list-item:hover a {
+    text-decoration: underline 3px solid $blue;
+  }
+}
+
+@keyframes expandNav {
+  0% {
+    padding: 0;
+    width: 0;
+  }
+
+  100% {
+    padding: $spacing-3xl $spacing-lg;
+    width: 30ch;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .navbar-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: azo-sans-web, sans-serif;
+  height: 100%;
+}
+
+h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+h2 {
+  font-size: inherit;
+  margin: 0;
+}
+
+h3 {
+  font-size: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  list-style: none;
+}
+
+li {
+  color: inherit;
+}

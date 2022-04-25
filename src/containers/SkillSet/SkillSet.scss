@@ -1,0 +1,51 @@
+@use "src/styles/spacing" as *;
+@use "src/styles/fonts" as *;
+@use "src/styles/colors" as *;
+@use "src/styles/breakpoints" as *;
+
+.skill-set {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+
+  h2 {
+    font-size: $font-2xl;
+    text-decoration: underline 4px solid $blue;
+    text-underline-offset: 1%;
+  }
+
+  &_main {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    max-width: 480px;
+  }
+
+  &_list *:not(last-child) {
+    margin-bottom: $spacing-sm;
+  }
+
+  &_wrapper {
+    display: flex;
+    gap: $spacing-2xl;
+    align-items: center;
+  }
+
+  &_extra {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+
+    p {
+      margin-bottom: $spacing-lg;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .skill-set {
+    &_wrapper {
+      flex-direction: column;
+    }
+  }
+}
