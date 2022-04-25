@@ -1,4 +1,4 @@
-import Education from "containers/Education/Education.container";
+import { Education } from "containers/Education";
 import { ContentLayout } from "layouts/ContentLayout";
 import React, { FC } from "react";
 
