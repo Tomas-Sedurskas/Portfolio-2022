@@ -64,7 +64,7 @@ const NavbarMobile: FC = () => {
               onClick={() => {
                 setIsNavbarOpen(false);
               }}
-              to="/"
+              to="/Portfolio-2022"
             >
               Home
             </Link>

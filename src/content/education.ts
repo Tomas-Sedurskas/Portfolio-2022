@@ -16,7 +16,7 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
         title: "Development of the Web App",
         description:
           "Throughout the development of this project I had a lot of freedom because the task given to me was pretty broad. The task was to make a data visualization web app with the use of an IoT API that the company had developed. The web app was done with the use of React, Bootstrap, Victory Charts, Wapp-Api and custom made stylings and layouts.",
-        img: "/src/assets/images/Dashy-Main.jpg",
+        img: "/Portfolio-2022/src/assets/images/Dashy-Main.jpg",
       },
     ],
   },
@@ -33,13 +33,13 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
         title: "Initial Development",
         description:
           "The idea for the Autolite began as a mobile application. At first, it was meant to be a simple smart light controller with some customization options but then it evolved into a more complex project that allowed to create presets and had Google Calendar event support. The application made use of React, Bootstrap, React Color, Wapp-Api and custom made stylings and layouts.",
-        img: "/src/assets/images/Autolite-Mobile.jpg",
+        img: "/Portfolio-2022/src/assets/images/Autolite-Mobile.jpg",
       },
       {
         title: "Desktop / Tablet Development",
         description:
           "As the project went on its design and layout transitioned and adapted for desktop and tablet usage as well. The touch screen friendly design was kept on both the mobile and desktop versions of the application partially as an artifact of mobile design and partially due to more and more laptops introducing touch screens into the market.",
-        img: "/src/assets/images/Autolite-Desktop.jpg",
+        img: "/Portfolio-2022/src/assets/images/Autolite-Desktop.jpg",
       },
     ],
   },
@@ -56,19 +56,19 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
         title: "Onboarding Experience",
         description:
           "Heavy focus was put on the onboarding experience for this project since it relied heavily on having at least a moderate amount of users. The onboarding included an introductory card tutorial and made use of empty state onboarding. Meaning that a new user should get all the pointers they could need to understand the purpose of the app and how to use it.",
-        img: "/src/assets/images/Travel-Intro.jpg",
+        img: "/Portfolio-2022/src/assets/images/Travel-Intro.jpg",
       },
       {
         title: "Development of the Mobile App",
         description:
           "The scope of this project required our team of 3 to manage our resources well to create this application. The whole team contributed to the design of the final product, but the coding part was split up. The back-end coding and some parts of the React code were written by me and my teammates took charge of the CSS and the rest of the React coding.",
-        img: "/src/assets/images/Travel-Main.jpg",
+        img: "/Portfolio-2022/src/assets/images/Travel-Main.jpg",
       },
       {
         title: "Trying Firebase",
         description:
           "For this project I wanted to try out something new so I stumbled upon Firebase while figuring out how the back-end should be done. The database, account registration and authentication were done with the use of Firebase.",
-        img: "/src/assets/images/Travel-Onboarding.jpg",
+        img: "/Portfolio-2022/src/assets/images/Travel-Onboarding.jpg",
       },
     ],
   },
@@ -85,13 +85,13 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
         title: "Early Website",
         description:
           "The Apel's website is not my first website but it was one of the earlier websites that I took part in creating. Most of the focus was put on the UX/UI and developing a new identity for the client.",
-        img: "/src/assets/images/Apel-Desktop.jpg",
+        img: "/Portfolio-2022/src/assets/images/Apel-Desktop.jpg",
       },
       {
         title: "Responsive Design and Typography",
         description:
           "The website was made fully responsive with some modifications to the layout. Typography played a big role in this project as well. We tried to strike a balance of something that could be easy to read, look aesthetically pleasing and look great both on a smartphone and on desktop.",
-        img: "/src/assets/images/Apel-Mobile.jpg",
+        img: "/Portfolio-2022/src/assets/images/Apel-Mobile.jpg",
       },
     ],
   },

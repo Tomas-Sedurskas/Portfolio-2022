@@ -50,11 +50,20 @@ function App() {
       <div className="app" data-theme={isThemeDark ? "dark" : "light"}>
         <Router>
           <Routes>
-            <Route element={<BaseLayout />} path="/">
+            <Route element={<BaseLayout />} path="/Portfolio-2022">
               <Route index element={<HomeView />} />
-              <Route element={<WorkExperienceView />} path="/work-experience" />
-              <Route element={<EducationView />} path="/education/:id" />
-              <Route element={<SkillSetView />} path="/skill-set" />
+              <Route
+                element={<WorkExperienceView />}
+                path="/Portfolio-2022/work-experience"
+              />
+              <Route
+                element={<EducationView />}
+                path="/Portfolio-2022/education/:id"
+              />
+              <Route
+                element={<SkillSetView />}
+                path="/Portfolio-2022/skill-set"
+              />
               <Route element={<Error404View />} path="*" />
             </Route>
           </Routes>

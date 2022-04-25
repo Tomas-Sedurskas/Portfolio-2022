@@ -13,7 +13,10 @@ const LogoIconList: FC<LogoIconListProps> = ({ icons, enableToolips }) => {
         return (
           <div className={`${className}_icon`}>
             {enableToolips && <span>{icon}</span>}
-            <img src={`src/assets/logos/${icon}.png`} alt={`${icon} logo`} />
+            <img
+              src={`/Portfolio-2022/src/assets/logos/${icon}.png`}
+              alt={`${icon} logo`}
+            />
           </div>
         );
       })}
