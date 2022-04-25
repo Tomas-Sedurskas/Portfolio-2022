@@ -2,6 +2,7 @@
 @use "src/styles/fonts" as *;
 @use "src/styles/colors" as *;
 @use "src/styles/borders" as *;
+@use "src/styles/breakpoints" as *;
 
 .content-section {
   display: flex;
@@ -9,7 +10,7 @@
   width: 100%;
   padding: $spacing-2xl 0;
   border-bottom: 1px solid $grey;
-  gap: $spacing-3xl;
+  gap: $spacing-2xl;
 
   &_title {
     font-size: $font-3xl;
@@ -56,7 +57,7 @@
     width: 100%;
 
     &:first-child {
-      max-width: 480px;
+      max-width: 360px;
     }
 
     &:last-child {
@@ -73,8 +74,19 @@
 
     img {
       max-width: 840px;
-      height: 100%;
+      width: 100%;
       object-fit: fill;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .content-section {
+    flex-direction: column-reverse;
+    gap: $spacing-xl;
+
+    &_column:first-child {
+      max-width: 560px;
     }
   }
 }

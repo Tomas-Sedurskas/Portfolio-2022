@@ -12,7 +12,7 @@ const SkillSet: FC<SkillSetProps> = ({ skillLogos }) => {
 
   return (
     <div className={className}>
-      <div className={`${className}_row`}>
+      <div className={`${className}_wrapper`}>
         <div className={`${className}_main`}>
           <h2>Skill set</h2>
           <ul className={`${className}_list`}>

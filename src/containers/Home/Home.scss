@@ -1,6 +1,7 @@
 @use "src/styles/spacing" as *;
 @use "src/styles/fonts" as *;
 @use "src/styles/colors" as *;
+@use "src/styles/breakpoints" as *;
 
 .home {
   display: flex;
@@ -42,5 +43,11 @@
     flex-direction: row;
     justify-content: flex-start;
     gap: $spacing-md;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .home {
+    flex-direction: column;
   }
 }
