@@ -1,8 +1,11 @@
 {
+  "homepage": "https://tomas-sedurskas.github.io/Portfolio-2022",
   "name": "portfolio-2022",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -17,6 +20,7 @@
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "gh-pages": "^3.2.3",
     "sass": "^1.50.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.2",
