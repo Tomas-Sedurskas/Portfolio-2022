@@ -9,8 +9,8 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
     subtitle: "IoT weather dashboard",
     description:
       "For my graduation exam I continued working with IoT related web applications. The Dashboard allowed users to get data about their indoor and outdoor environments by connecting IoT devices to the App. The aim of the project was to create something that is aesthetically pleasing while being functional and easy to use by visualizing the data in charts and showing live data to the user.",
-    shape: IconShapes.Pentagon,
-    color: Colors.Green,
+    shape: IconShapes.Hexagon,
+    color: Colors.Blue,
     subsections: [
       {
         title: "Development of the Web App",
@@ -27,7 +27,7 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
     description:
       "Autolite was a Solo project that was done throughout my internship at Seluxit A/S. This was my first attempt at making a web application for IoT devices. The app allowed users to control Philips Hue lights. The main focus was on allowing users to attach their custom made lighting presets to their Google calendar events.",
     shape: IconShapes.Pentagon,
-    color: Colors.Green,
+    color: Colors.Yellow,
     subsections: [
       {
         title: "Initial Development",
@@ -49,7 +49,7 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
     subtitle: "Social media mobile travel app",
     description:
       "As a team of 3, we developed a social media mobile web app for travelers. The goal of the application was to allow users to create and share their trip ideas and experiences. Locations, routes, photos, tips, to-do lists and more were accessible in the web app. The goal of this project was to provide all of the necessary tools for the users to share their experiences while other users could easily find for what they are looking by searching or filtering through the trips.",
-    shape: IconShapes.Pentagon,
+    shape: IconShapes.Square,
     color: Colors.Green,
     subsections: [
       {
@@ -78,8 +78,8 @@ export const EDUCATION_PROJECTS_CONTENT: ContentPage[] = [
     subtitle: "Website redesign",
     description:
       "This project required us to form teams of 4 students. We collaborated to redesign, develop a brand Identity and code a new website for the client. The final product loaded content dynamically from WordPress as a Headless CMS as part of the University requirements for this project.",
-    shape: IconShapes.Pentagon,
-    color: Colors.Green,
+    shape: IconShapes.Triangle,
+    color: Colors.Red,
     subsections: [
       {
         title: "Early Website",

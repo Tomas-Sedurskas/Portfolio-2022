@@ -33,7 +33,7 @@ const Education: FC<EducationProps> = ({
                 <p>{description}</p>
               </div>
             </div>
-            <img src={img} loading="lazy" />
+            <img src={img} />
           </div>
         );
       })}

@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import "./Home.scss";
 import colorShape from "assets/images/colorShape.svg";
 import { Button } from "components/Button";
+import { HeroSvg } from "components/HeroSvg";
 
 const Home: FC = () => {
   const className = "home";
@@ -23,11 +24,7 @@ const Home: FC = () => {
         />
       </div>
 
-      <img
-        className={`${className}_hero-image`}
-        src={colorShape}
-        loading="lazy"
-      />
+      <HeroSvg />
     </div>
   );
 };

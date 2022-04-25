@@ -38,6 +38,17 @@
     display: flex;
     gap: $spacing-2xl;
     width: 100%;
+
+    img {
+      border-radius: $border-radius-md;
+      transition: all 0.55s ease;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        transform: scale(1.15);
+        box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.15);
+      }
+    }
   }
 
   &_row {
