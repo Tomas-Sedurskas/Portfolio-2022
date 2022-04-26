@@ -12,7 +12,7 @@ const WorkExperience: FC<WorkExperienceProps> = ({ works }) => {
   return (
     <div className={className}>
       {works.map((work) => {
-        return <ContentSection {...work} />;
+        return <ContentSection key={work.title} {...work} />;
       })}
     </div>
   );

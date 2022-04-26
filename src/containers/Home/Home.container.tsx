@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import "./Home.scss";
-import colorShape from "assets/images/colorShape.svg";
+
 import { Button } from "components/Button";
 import { HeroSvg } from "components/HeroSvg";
 
@@ -20,7 +20,7 @@ const Home: FC = () => {
         <Button
           linkType="internal"
           label={"View my work"}
-          url={"/work-experience"}
+          url={"/Portfolio-2022/work-experience"}
         />
       </div>
 

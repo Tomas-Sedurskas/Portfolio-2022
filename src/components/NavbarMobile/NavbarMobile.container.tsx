@@ -64,7 +64,7 @@ const NavbarMobile: FC = () => {
               onClick={() => {
                 setIsNavbarOpen(false);
               }}
-              to="/"
+              to="/Portfolio-2022/"
             >
               Home
             </Link>
@@ -74,7 +74,7 @@ const NavbarMobile: FC = () => {
               onClick={() => {
                 setIsNavbarOpen(false);
               }}
-              to="/work-experience"
+              to="/Portfolio-2022/work-experience"
             >
               Work experience
             </Link>
@@ -84,7 +84,7 @@ const NavbarMobile: FC = () => {
               onClick={() => {
                 setIsNavbarOpen(false);
               }}
-              to="/education/0"
+              to="/Portfolio-2022/education/0"
             >
               Education
             </Link>
@@ -94,7 +94,7 @@ const NavbarMobile: FC = () => {
               onClick={() => {
                 setIsNavbarOpen(false);
               }}
-              to="/skill-set"
+              to="/Portfolio-2022/skill-set"
             >
               Skill set
             </Link>

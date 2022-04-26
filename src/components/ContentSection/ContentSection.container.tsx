@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useId } from "react";
 
 import { ContentSection as ContentSectionProps } from "types/content.types";
 
@@ -40,7 +40,11 @@ const ContentSection: FC<ContentSectionProps> = ({
           <h3 className={`${className}_subtitle`}>More details:</h3>
           <ul className={`${className}_experience-list`}>
             {experiences.map((experience) => {
-              return <li>{experience}</li>;
+              return (
+                <li key={experience.substring(9, 19).replace(/\s/g, "")}>
+                  {experience}
+                </li>
+              );
             })}
           </ul>
         </div>

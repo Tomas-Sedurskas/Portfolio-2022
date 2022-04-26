@@ -41,13 +41,13 @@ const Education: FC<EducationProps> = ({
         <Button
           linkType="internal"
           label="Previous project"
-          url={`/education/${calcPreviousId(id)}`}
+          url={`/Portfolio-2022/education/${calcPreviousId(id)}`}
           reverse={true}
         />
         <Button
           linkType="internal"
           label="Next project"
-          url={`/education/${calcNextId(id)}`}
+          url={`/Portfolio-2022/education/${calcNextId(id)}`}
         />
       </div>
     </div>
