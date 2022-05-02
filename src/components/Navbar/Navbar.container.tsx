@@ -1,15 +1,18 @@
 import React, { FC, useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import classNames from "classnames";
 
 import { Colors } from "types/colors.types";
 import { IconShapes } from "types/icons";
 import { Icon } from "components/Icon";
+import ThemeContext from "context/ThemeContext";
+import { paths } from "routing/paths";
 
 import "./Navbar.scss";
-import ThemeContext from "context/ThemeContext";
 
 const Navbar: FC = () => {
   const className = "navbar";
+  const { pathname } = useLocation();
 
   const { isThemeDark, toggleTheme, isSecretEnabled } =
     useContext(ThemeContext);
@@ -33,18 +36,17 @@ const Navbar: FC = () => {
       )}
 
       <ul className={`${className}_list`}>
-        <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/">Home</Link>
-        </li>
-        <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/work-experience">Work experience</Link>
-        </li>
-        <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/education/0">Education</Link>
-        </li>
-        <li className={`${className}_list-item`}>
-          <Link to="/Portfolio-2022/skill-set">Skill set</Link>
-        </li>
+        {paths.map(({ path, name }) => {
+          return (
+            <li
+              className={classNames(`${className}_list-item`, {
+                "-active": path === pathname,
+              })}
+            >
+              <Link to={path}>{name}</Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
