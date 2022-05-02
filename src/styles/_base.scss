@@ -1,3 +1,5 @@
+@use "src/styles/colors" as *;
+
 html,
 body,
 #root {
@@ -32,6 +34,17 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  transition: transform 0.1s ease;
+
+  &:focus {
+    outline-color: $blue;
+  }
+
+  &:active {
+    outline-color: $yellow;
+    text-decoration: none;
+    transform: scale(0.98);
+  }
 }
 
 button {
@@ -39,6 +52,16 @@ button {
   border: none;
   color: inherit;
   padding: 0;
+  transition: transform 0.1s ease;
+
+  &:focus {
+    outline-color: $blue;
+  }
+
+  &:active {
+    text-decoration: none;
+    transform: scale(0.98);
+  }
 }
 
 ul {
