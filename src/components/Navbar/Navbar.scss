@@ -35,6 +35,17 @@
     gap: $spacing-lg;
     align-items: center;
   }
+
+  &_list-item {
+    border-bottom: 3px solid transparent;
+    &:hover {
+      border-color: $yellow;
+    }
+
+    &.-active {
+      border-color: $blue;
+    }
+  }
 }
 
 @media (max-width: $breakpoint-md) {
