@@ -11,11 +11,11 @@ const Button: FC<ButtonProps> = ({ label, url, reverse, linkType }) => {
     <>
       {linkType === "internal" && (
         <Link to={url}>
-          <button className={className}>
+          <div className={className}>
             {reverse && <img className={`${className}_reverse`} src={Arrow} />}
             {label}
             {!reverse && <img src={Arrow} />}
-          </button>
+          </div>
         </Link>
       )}
 

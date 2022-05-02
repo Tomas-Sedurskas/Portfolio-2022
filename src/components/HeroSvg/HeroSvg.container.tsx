@@ -11,15 +11,15 @@ const Button: FC = () => {
   const [isRedClicked, setIsRedClicked] = useState(false);
   const [isBlueClicked, setIsBlueClicked] = useState(false);
   const [isGreenClicked, setIsGreenClicked] = useState(false);
-
-  const isSecretUnlocked = isRedClicked && isBlueClicked && isGreenClicked;
+  const [isSecretUnlocked, setIsSecretUnlocked] = useState(false);
 
   useEffect(() => {
-    if (isSecretUnlocked) {
+    if (isRedClicked && isBlueClicked && isGreenClicked) {
+      setIsSecretUnlocked(true);
       localStorage.setItem("portfolio-secret_dark_mode", "true");
       toggleSecret();
     }
-  }, [isSecretUnlocked]);
+  }, [isRedClicked, isBlueClicked, isGreenClicked]);
 
   return (
     <div className={className}>
@@ -68,12 +68,14 @@ const Button: FC = () => {
         />
       </svg>
       {isSecretUnlocked && (
-        <p className={`${className}_secret`}>
+        <div className={`${className}_secret`}>
           <h3>🎉Congratulations!🎉</h3>
-          You unlocked dark mode. <br></br>
-          Click the orange circle <br></br>
-          at the top of the page
-        </p>
+          <p>
+            You unlocked dark mode. <br></br>
+            Click the orange circle <br></br>
+            at the top of the page
+          </p>
+        </div>
       )}
     </div>
   );
