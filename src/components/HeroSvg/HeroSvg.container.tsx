@@ -69,7 +69,7 @@ const Button: FC = () => {
       </svg>
       {isSecretUnlocked && (
         <p className={`${className}_secret`}>
-          Congratulations!<br></br>
+          <h3>🎉Congratulations!🎉</h3>
           You unlocked dark mode. <br></br>
           Click the orange circle <br></br>
           at the top of the page

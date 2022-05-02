@@ -38,7 +38,13 @@
     width: 100%;
     animation-name: secret;
     animation-duration: 1.6s;
-    font-weight: 700;
+    font-weight: 400;
+
+    h3 {
+      font-size: $font-xl;
+      line-height: 2.4;
+      font-weight: 700;
+    }
   }
 
   @keyframes secret {
