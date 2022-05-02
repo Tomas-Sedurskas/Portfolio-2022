@@ -39,6 +39,7 @@ const Navbar: FC = () => {
         {paths.map(({ path, name }) => {
           return (
             <li
+              key={name}
               className={classNames(`${className}_list-item`, {
                 "-active": path === pathname,
               })}
