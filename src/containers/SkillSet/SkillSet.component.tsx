@@ -32,13 +32,12 @@ const SkillSet: FC<SkillSetProps> = ({ skillLogos }) => {
           </ul>
 
           <h2>Fututre Roadmap</h2>
-          <p>
-            Currently, I am excited to learn GraphQL, Apollo, Svelte and Vite.
-          </p>
+          <p>Currently, I am excited to learn tRPC, Remix or Next.js</p>
           <p>
             In the long term i am interested in looking into Mobile development
-            and more graphically advanced technologies like AR, VR and 3D
-            graphics for the web.
+            with React Native. In addition, I am thinking of exploring some
+            other web technologies to cover other parts of the web development
+            with tools like: Railway, Bun, PlanetScale, Prisma, Vercel.
           </p>
         </div>
         <LogoIconList icons={skillLogos} />

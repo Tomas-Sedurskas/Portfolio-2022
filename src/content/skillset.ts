@@ -16,7 +16,5 @@ export const SKILL_LOGOS: string[] = [
   "AdobePS",
   "AdobeAI",
   "Vite",
-  "GraphQL",
-  "Apollo",
   "Svelte",
 ];
